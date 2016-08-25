@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="script.js">
+    </script>
+    <link href="../../style/main.css" rel="stylesheet">
+    <title>DonutPixel | Number Converter</title>
+</head>
+<body>
+    <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a class="active" href="../../projects.html">Projects</a></li>
+        <li><a href="../../games.html">Games</a></li>
+        <li><a href="../../about.html">About</a></li>
+        <div id="socialGroup">
+            <a href="https://www.instagram.com/prescarlton/" target="_blank"><img class="socialLogo" src="../../resources/img/instagram.png" id="insta"/></a>
+            <a href="https://reddit.com/u/DonutPixel" target="_blank"><img class="socialLogo" src="../../resources/img/reddit.png" id="reddit"/></a>
+            <a href="https://twitter.com/prescarlton" target="_blank"><img class="socialLogo" src="../../resources/img/twitter.png" id="tweet"/></a>
+        </div>
+    </ul>
+    <p id="numConvResult">Type a number in the textbox to get started.</p>
+    <center>
+        <input id="box" placeholder="Value" type="text"><br>
+        <button id="CLICK" onclick="convertBase.dec2bin()">Dec to Bin</button>
+        <button id="CLICK" onclick="convertBase.bin2dec()">Bin to Dec</button>
+        <button id="CLICK" onclick="convertBase.dec2hex()">Dec to Hex</button>
+        <button id="CLICK" onclick="convertBase.hex2dec()">Hex to Dec</button>
+        <button id="CLICK" onclick="convertBase.bin2hex()">Bin to Hex</button>
+        <button id="CLICK" onclick="convertBase.hex2bin()">Hex to Bin</button>
+    </center>
+</body>
+</html>
