@@ -86,7 +86,8 @@ convertBase.dec2all = function () {
         decVal = addCommas(decVal);
         var binVal = convertBase(decVal).from(10).to(2);
         var hexVal = convertBase(decVal).from(10).to(16);
-        document.getElementById("results").innerHTML="Decimal Value: " + decVal + br + "Binary Value: " + binVal + br + "Hex Value: " + hexVal;
+        var uppercase_hexVal = parseInt(hexVal.toUpperCase(),16)
+        document.getElementById("results").innerHTML="Decimal Value: " + decVal + br + "Binary Value: " + binVal + br + "Hex Value: " + uppercase_hexVal;
     
     }
 };
@@ -101,7 +102,8 @@ convertBase.bin2all = function () {
     document.getElementById('results').innerHTML = "Error: That's not a binary number. Try again!";
     } else {
     decVal = addCommas(decVal);
-    document.getElementById("results").innerHTML = "Decimal Value: " + decVal + br + "Binary Value: " + binVal + br + "Hex Value: " + hexVal;
+    var uppercase_hexVal = parseInt(hexVal.toUpperCase(),16)
+    document.getElementById("results").innerHTML = "Decimal Value: " + decVal + br + "Binary Value: " + binVal + br + "Hex Value: " + uppercase_hexVal;
     }
 
 };
@@ -117,7 +119,8 @@ convertBase.hex2all = function () {
         var decVal = convertBase(hexVal).from(16).to(10);
         decVal = addCommas(decVal);
         var binVal = convertBase(hexVal).from(16).to(2);
-        document.getElementById("results").innerHTML="Decimal Value: " + decVal + br + "Binary Value: " + binVal + br + "Hex Value: " + hexVal;
+        var uppercase_hexVal = parseInt(hexVal.toUpperCase(),16)
+        document.getElementById("results").innerHTML="Decimal Value: " + decVal + br + "Binary Value: " + binVal + br + "Hex Value: " + upppercase_hexVal;
     } else {
         document.getElementById('results').innerHTML = "Error: That's not a hexadecimal number. Try again!";
     }
